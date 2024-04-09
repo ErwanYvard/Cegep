@@ -1,0 +1,10 @@
+body {
+    background-color: #7dbc7d;
+}
+
+.plante{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}

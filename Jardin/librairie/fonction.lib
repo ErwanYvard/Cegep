@@ -1,0 +1,46 @@
+<?php
+
+function connecterBD(&$bd){
+            $bd = mysqli_connect("localhost", "root", "infoWin420", "bonbon");
+            if (mysqli_connect_errno())
+            {
+                echo "Echec lors de la connexion à Mysql : ".mysqli_connect_error();
+            }
+            mysqli_set_charset($bd, 'utf8');
+}
+
+function afficherUsager($bd){
+            $requete = "select * from usager";
+            $resultat = mysqli_query($bd, $requete);
+            while ($ligne = mysqli_fetch_array($resultat))
+            {
+                print("<p>");   
+                print("<h3>No. Usager : $ligne[idUsager]</h3>");
+                print("$ligne[prenom]&nbsp;$ligne[nom]<br>");
+                print("$ligne[courriel]<br>");
+                print("</p>");
+            }
+}
+
+function afficherProduit($bd){
+            $requete = "select * from produit";
+            $resultat = mysqli_query($bd, $requete);
+            while ($ligne = mysqli_fetch_array($resultat))
+            {
+                print("<div class='row' style='margin: 1px; border-bottom: 1px solid #DDD'>");
+                print("<h4>$ligne[nomProduit]</h4>");
+                print("<div class='col-4'>");
+                print("<img src='images/$ligne[idProduit].jpg' class='img-fluid' style='float: left;'>");
+                print("</div>");
+                print("<div class='col-8'>");
+                print("<p><b>Prix :</b>&nbsp;$ligne[prix] &dollar;CA</p>");
+                print("<p><b>Disponibilité :</b>&nbsp;$ligne[quantite]</p>");
+                print("<p><b>Format :</b>&nbsp;$ligne[format]</p>");
+                print("<p><b>Fournisseur :</b>&nbsp;$ligne[fournisseur]</p>");
+                print("<p><b>Remarque :</b>&nbsp;$ligne[description]</p>");
+                print("</div>");
+                print("</div>");
+            }
+}
+
+?>
