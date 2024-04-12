@@ -11,3 +11,12 @@ Plusieurs choix sont possibles :
    - https://esphome.io/guides/installing_esphome
  - Avec Docker
    - https://esphome.io/guides/getting_started_command_line
+
+
+Finalement l'install avec Docker n'est peut-être pas une bonne idée car il est impossible d'installer les add-ons :/
+
+Voir https://www.home-assistant.io/installation
+
+
+Installation avec medium USB
+https://www.home-assistant.io/installation/generic-x86-64#method-2-installing-haos-directly-from-a-boot-medium
