@@ -11,4 +11,5 @@ ESP 32 Documentation <br>
   https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf <br>
 esp home <br>
   https://addons.mozilla.org/fr/firefox/addon/webserial-for-firefox/ <br>
-  https://esphome.io/
+  https://esphome.io/ <br>
+https://www.youtube.com/watch?v=3GbyYQHQvV8
