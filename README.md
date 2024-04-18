@@ -13,3 +13,5 @@ esp home <br>
   https://addons.mozilla.org/fr/firefox/addon/webserial-for-firefox/ <br>
   https://esphome.io/ <br>
 https://www.youtube.com/watch?v=3GbyYQHQvV8
+
+##host shutdown pour fermer haos
