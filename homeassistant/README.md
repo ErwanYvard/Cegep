@@ -48,6 +48,14 @@ GPIO2 Utiliser pour connecter la led du board, ou des systèmes binaires.
 
 https://esphome.io/components/esp32.html?highlight=esp32dev
 
+## Problème IP (à résoudre)
+
+INFO Successfully compiled program.
+INFO Resolving IP address of erwan.local
+ERROR Error resolving IP address of erwan.local. Is it connected to WiFi?
+ERROR (If this error persists, please set a static IP address: https://esphome.io/components/wifi.html#manual-ips)
+ERROR Error resolving IP address: Error resolving address with mDNS: Did not respond. Maybe the device is offline., [Errno -5] No address associated with hostname
+
 ## Achat ESP32
 https://www.amazon.ca/KeeYees-Development-Bluetooth-Microcontroller-ESP-WROOM-32/dp/B07QCP2451/ref=sr_1_5?crid=2VPTHM2IO4F4W&dib=eyJ2IjoiMSJ9.zMnsEGvXkt38UBagMPGTY2_UpVn_R3ittvmhp2cjkE0CGmUvWvSMMBuaj-5zMrpv1QTviJxKPgGbC8YGCnITu5eVnXd7NwoMrN9mJuEMNZzHzT0Z56EOZUI49bQJ5Us7iTA3HCP_t2AsSxWGZh6DTOtM1hyhOjfGQNZaaPFHwn9mD1aHY3YS8ghqVXhNirtLhQzl3w4yGXVL5q_Z1G5myKXralZD7GS3UR5__EnKntBoqy-yIem49r3i6zcURR_md4wdXaCwPJu519o6ik6Wc95tEtNgso6YCW-BPtIk93U.zXIBIUpTt3-OLX8sSpnxZUKhGdb-RTVvZZ6jTgnU-Ss&dib_tag=se&keywords=esp32&qid=1712337039&sprefix=esp3%2Caps%2C87&sr=8-5&th=1
 
