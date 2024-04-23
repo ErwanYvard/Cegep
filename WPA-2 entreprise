@@ -1,1 +1,14 @@
 ## https://askubuntu.com/questions/262491/connect-to-a-wpa2-enterprise-connection-via-cli-no-desktop
+
+# nmcli con add type wifi ifname wlan0 con-name CONNECTION_NAME ssid SSID <br>
+# nmcli con edit id CONNECTION_NAME <br>
+nmcli> set ipv4.method auto <br>
+nmcli> set 802-1x.eap peap <br>
+nmcli> set 802-1x.phase2-auth mschapv2 <br>
+nmcli> set 802-1x.identity USERNAME <br>
+nmcli> set 802-1x.password PASSWORD <br>
+nmcli> set 802-1x.anonymous-identity ANONYMOUS-IDENTITY <br>
+nmcli> set wifi-sec.key-mgmt wpa-eap <br>
+nmcli> save <br>
+nmcli> activate <br>
+
