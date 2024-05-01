@@ -10,6 +10,8 @@ https://www.hivemq.com/blog/how-to-get-started-with-mqtt/ <br>
 ESP 32 Documentation <br> 
 https://randomnerdtutorials.com/getting-started-with-esp32/ <br>
   https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf <br>
+  https://randomnerdtutorials.com/esp32-troubleshooting-guide/ <br>
+  https://github.com/espressif/arduino-esp32/issues/3510
 esp home <br>
   https://addons.mozilla.org/fr/firefox/addon/webserial-for-firefox/ <br>
   https://esphome.io/ <br>
