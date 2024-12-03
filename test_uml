@@ -1,0 +1,150 @@
+@startuml
+
+interface PlayerState {
++piocherCarte(): void
++jouerCarte(): void
++attaquerCarte(): void
++terminerTour(): void
++attendreTour(): void
+}
+
+class PiocherCarte{
++piocherCarte(): void
++jouerCarte(): void
++attaquerCarte(): void
++terminerTour(): void
++attendreTour(): void
+}
+
+class JouerCarte{
++piocherCarte(): void
++jouerCarte(): void
++attaquerCarte(): void
++terminerTour(): void
++attendreTour(): void
+}
+
+class AttaquerCarte{
++piocherCarte(): void
++jouerCarte(): void
++attaquerCarte(): void
++terminerTour(): void
++attendreTour(): void
+}
+
+class TerminerTour(){
++piocherCarte(): void
++jouerCarte(): void
++attaquerCarte(): void
++terminerTour(): void
++attendreTour(): void
+}
+
+class AttendreTour(){
++piocherCarte(): void
++jouerCarte(): void
++attaquerCarte(): void
++terminerTour(): void
++attendreTour(): void
+}
+
+
+interface Observer {
++update(carte: Carte): void
+}
+
+class GestionTour {
+-joueur Joueur
+-carte list<Carte>
++jouerCarte(): void
++attaquerCarte(): void
++terminerTour(): void
++attendreTour(): void
++update(carte: Carte): void
+}
+
+class Deck {
+-nom String
+-carte list<Carte>
+-taille int
++ajouterCarte(): Carte
++retirerCarte(): void
+}
+
+class DeckComparator {
++ int compare(Carte c1, Carte c2)
+}
+
+class DeckRepesitoryInMemory{
+}
+
+class CarteFactory {
++ static Carte creerCarte(String nom, String couleur, int valeur)
+}
+
+interface Carte {
++ getNom()
++ getCouleur()
++ getValeur()
++ getEffet()
+}
+
+class Monstre {
+-nom: String
+-couleur: String
+-valeur: int
+-effet: String
+-attaque: int
+-vie: int
++ getNom()
++ getCouleur()
++ getValeur()
++ getEffet()
++ getAttaque()
++ getVie()
++ attaqueMonstre(Carte carte)
+}
+
+class CarteObjet {
+-nom: String
+-couleur: String
+-valeur: int
+-effet: String
+-utilisation: int
++ getNom()
++ getCouleur()
++ getValeur()
++ getEffet()
++ getUtilisation()
++ declencherEffet(CarteObjet carte, int utilisation)
+}
+
+class Magie {
+-nom: String
+-couleur: String
+-valeur: int
+-effet: String
++ getNom()
++ getCouleur()
++ getValeur()
++ getEffet()
++ declancherEffet(Magie carte)
+}
+
+
+class UberEat {
+-name: String
++UberEat(name: String)
++update(order: Order): void
+}
+
+Order *-- "1" OrderState
+Order *-- "1..*" Observer
+OrderState <|.. NewOrderState
+OrderState <|.. ConfirmedState
+OrderState <|.. ProcessingState
+OrderState <|.. ShippedState
+OrderState <|.. DeliveredState
+Observer <|.. UberEat
+
+@enduml
