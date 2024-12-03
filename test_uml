@@ -131,20 +131,4 @@ class Magie {
 + declancherEffet(Magie carte)
 }
 
-
-class UberEat {
--name: String
-+UberEat(name: String)
-+update(order: Order): void
-}
-
-Order *-- "1" OrderState
-Order *-- "1..*" Observer
-OrderState <|.. NewOrderState
-OrderState <|.. ConfirmedState
-OrderState <|.. ProcessingState
-OrderState <|.. ShippedState
-OrderState <|.. DeliveredState
-Observer <|.. UberEat
-
 @enduml
