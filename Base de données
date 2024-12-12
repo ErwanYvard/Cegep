@@ -1,0 +1,24 @@
+Création d'un utilisateur : 
+CREATE ROLE "" WITH
+	LOGIN
+	NOSUPERUSER
+	NOCREATEDB
+	NOCREATEROLE
+	INHERIT
+	NOREPLICATION
+	NOBYPASSRLS
+	CONNECTION LIMIT -1;
+
+Création d'un groupe :
+CREATE ROLE  WITH NOLOGIN NOSUPERUSER NOCREATEDB NOCREATEROLE CONNECTION LIMIT -1;
+
+Création d'un schema
+CREATE SCHEMA ""
+    AUTHORIZATION "Habs_role";
+
+Les privilèges :
+SELECT, INSERT, UPDATE, DELETE,
+        USAGE, EXECUTE, etc. Vous pouvez également utiliser le mot-clé ALL pour accorder tous les privilèges.
+
+GRANT SELECT ON ""TABLE"" TO ""user"";    
+grant usage on schema test_droit to john
